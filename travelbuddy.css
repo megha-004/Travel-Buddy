@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(223, 214, 241);
+}
+
+/* 1st section css*/
+.white{
+    color: darkblue;
+    height: 70px;
+    width: auto;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.white-left, .white-right{
+    margin-right: 30px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.tabs{
+    margin-left: 20px;
+    padding: 5px;
+}
+
+/* 2nd section css */
+.blue{
+    color: white;
+    background-color: rgb(13, 13, 55);
+    height: 60px;
+    width: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-left, .blue-right{
+    color: white;
+    margin-right: 30px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+/* slides */
+.slider{
+    margin-top: 50px;
+    background-color: grey;
+    height: 400px;
+    width: auto;
+}
+
+/* slider */
+.advertizement{
+  height: 500px;
+  width: auto;
+  background-size: contain;
+  animation-name: animation;
+  animation-delay: 3s;
+  animation-duration: 15s;
+  animation-iteration-count: 6;
+}
+
+@keyframes animation{
+  0%{
+    background-image: url(images/gg1.jpg);
+  }
+  35%{
+    background-image: url(images/gg2.jpg);
+  }
+  70%{
+    background-image: url(images/gg3.jpg);
+  }
+  100%{
+    background-image: url(images/gg4.jpg);
+  }
+}
+
+.text{
+  margin-top: 20px;
+  text-align: center;
+  padding: 2px;
+  font-size: small;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.modes{
+  margin-top: 40px;
+  display: flex;
+  /* gap: 25px; */
+  justify-content: space-around;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.modes .card{
+  /* border-radius: 20px; */
+  border: 1px solid royalblue;
+  box-shadow: 20px rgba(0, 0, 86, 0.2);
+}
+
+.caution{
+  height: 30vh;
+  width: auto;
+  background-color: rgb(143, 171, 173);
+  text-align: left;
+  margin-top: 35px;
+  padding: 20px;
+  display: flex;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.connections{
+  height: 30vh;
+  width: auto;
+  background-color: rgb(13, 13, 55);
+  color: white;
+  text-align: left;
+  padding-top: 20px;
+  display: flex;
+  font-size: large;
+  justify-content: space-around;
+}
